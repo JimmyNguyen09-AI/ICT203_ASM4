@@ -1,0 +1,320 @@
+
+
+  .methodology-section {
+    position: relative;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .methodology-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
+      url('../images/methodology-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  
+  
+  .methodology-section .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  
+  .methodology-box {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.068);
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+  }
+  
+  .methodology-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .methodology-box .serif-title {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #dcdcff;
+  }
+  
+  .methodology-box p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #f1f1f1;
+  }
+  
+  .hero-img-alt {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-img-alt img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+  }
+  
+
+
+.more-projects-heading {
+    text-align: center;
+    margin-bottom: 2rem; 
+    font-family: var(--font-serif);
+  font-size: 2.5rem;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  animation: glowText 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes glowText {
+    from {
+      text-shadow: 0 0 8px var(--primary);
+    }
+    to {
+      text-shadow: 0 0 20px var(--accent);
+    }
+  }
+
+  .hero-img-alt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInZoom 1.2s ease-out;
+  }
+  
+  .hero-img-alt img {
+    max-width: 100%;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .hero-img-alt img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* New animation */
+  @keyframes fadeInZoom {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
+
+  
+
+  .recent-projects {
+    background: linear-gradient(135deg, #f0f2f5 50%, #b6b6fa 50%);
+    padding: 0px 0;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    
+  }
+  
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+    position: relative;
+  display: inline-block;
+  font-weight: 700;
+  background: linear-gradient(90deg, #3654ff, #d1c6ff, #8c61ff);
+  background-size: 150% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 7s linear infinite;
+  
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: -100% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+  
+  .thumbnail-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .thumbnail-row img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease;
+  }
+  
+  .thumbnail-row img:hover {
+    transform: scale(1.05);
+  }
+  .methodology-box {
+    background: linear-gradient(135deg, rgba(93, 67, 238, 0.801), rgba(58, 86, 212, 0.95));
+    padding: 2.5rem;
+    border-radius: 16px;
+    color: white;
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(5px);
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeInUp 8.8s ease-out;
+    margin-bottom: 3rem;
+  }
+  
+  .methodology-box h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .methodology-box h2 {
+    font-size: 1.8rem;
+    font-weight: 3500;
+    margin-bottom: 1.5rem;
+    color: #d4e3ff;
+  }
+  
+  .methodology-box p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #f1f1f1;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-secondary);
+  }
+  
+  .serif-title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+  }
+  
+  .decorative {
+    font-family: var(--font-decorative);
+  }
+  
+  .recent-projects {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .project-thumb {
+    text-align: center;
+    max-width: 220px;
+  }
+  
+  .project-thumb img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+  }
+  
+  .project-label {
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: var(--secondary);
+    font-size: 1rem;
+  }
+  .thumbnail-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .thumbnail {
+    text-align: center;
+    max-width: 220px;
+  }
+  
+  .thumbnail img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+  }
+  
+  
+  .thumbnail p {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--gray);
+  }
+    
+  .partners {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .partners h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--primary);
+  }
+  
+  .partner-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    
+  }
+  
+  .partner-logos img {
+    max-height: 60px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .partner-logos img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+  }
+  
+  .recent-projects img,
+  .carousel img,
+  .thumbnail img {
+    border: 3px solid #4190f8; /* change color and thickness as needed */
+    border-radius: 12px; /* optional: rounded corners */
+  }
+  
+  

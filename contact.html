@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - 5Pixels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      /* color: #e2e8f0; */
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      background-color: rgba(30, 41, 59, 0.95);
+      padding: 40px;
+      margin: 100px auto;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(5px);
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 32px;
+      margin-bottom: 25px;
+      color: #38bdf8;
+      text-shadow: 0 0 10px #0284c7;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-group i {
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      color: #94a3b8;
+    }
+
+    input,
+    textarea {
+      width: 95%;
+      padding: 12px 12px 12px 40px;
+      border: none;
+      border-radius: 8px;
+      background-color: #334155;
+      color: #f8fafc;
+      font-size: 16px;
+      outline: none;
+      transition: box-shadow 0.3s ease;
+    }
+
+    input:focus,
+    textarea:focus {
+      box-shadow: 0 0 0 2px #0ea5e9;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #94a3b8;
+    }
+
+    button {
+      width: 50%;
+      background-color: #0ea5e9;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #0284c7;
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">5Pixels</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="#">Get IT Support</a>
+    <div class="mobile-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form action="#" method="post">
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" name="name" placeholder="Your Name" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-comment"></i>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
