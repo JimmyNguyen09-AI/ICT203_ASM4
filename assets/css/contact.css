@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+}
+
+.container-contact {
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(30, 41, 59, 0.95);
+    padding: 40px;
+    margin: 100px auto;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #38bdf8;
+    text-shadow: 0 0 10px #0284c7;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-group i {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    color: #94a3b8;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    background-color: #334155;
+    color: #f8fafc;
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 2px #0ea5e9;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #94a3b8;
+}
+
+.body-bg {
+    background-color: red;
+    width: 100vw;
+    height: 100vw;
+}
+
+button {
+    width: 100%;
+    background-color: #0ea5e9;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0284c7;
+    transform: scale(1.03);
+}
+
+.success-message {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #16a34a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: none;
+    box-shadow: 0 0 10px #16a34a;
+    animation: fadeInOut 4s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+    }
+
+    nav {}
+}

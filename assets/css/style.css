@@ -332,7 +332,6 @@ nav a.active {
     transition: var(--transition);
 }
 
-/* Responsive Styles */
 @media (max-width: 1024px) {
     .hero {
         padding: 4rem 5%;
@@ -344,28 +343,40 @@ nav a.active {
 }
 
 @media (max-width: 768px) {
-    .mobile-menu-btn {
-        display: flex;
+    .logo {
+        font-size: 1rem;
     }
 
     nav ul {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 70%;
-        height: 100vh;
-        background: white;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        transition: var(--transition);
-        box-shadow: var(--shadow-lg);
-        z-index: 1000;
+        background: white;
+        position: static;
+        width: 100%;
+        padding: 1rem;
+        gap: 1rem;
+        box-shadow: none;
     }
 
-    nav ul.active {
-        right: 0;
+    nav ul li a {
+        font-size: 0.7rem;
+        padding: 0.25rem 0;
+    }
+
+    nav {
+        flex: 1;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0.5rem;
+        padding: 1rem 5%;
+    }
+
+    .btn {
+        display: none;
+        /* Ẩn nút Get IT Support để đỡ chật */
     }
 
     .hero {
@@ -385,10 +396,6 @@ nav a.active {
 
     .buttons {
         justify-content: center;
-    }
-
-    header .btn {
-        display: none;
     }
 }
 
@@ -410,6 +417,3 @@ nav a.active {
         width: 100%;
     }
 }
-
-
-  

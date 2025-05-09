@@ -15,7 +15,6 @@
     body {
       margin: 0;
       background: linear-gradient(to right, var(--primary), var(--secondary));
-      /* color: #e2e8f0; */
     }
 
     .container {
@@ -111,10 +110,25 @@
     }
 
     @keyframes fadeInOut {
-      0% { opacity: 0; transform: translateY(-10px); }
-      10% { opacity: 1; transform: translateY(0); }
-      90% { opacity: 1; transform: translateY(0); }
-      100% { opacity: 0; transform: translateY(-10px); }
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      10% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      90% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
     }
 
     @media (max-width: 600px) {
@@ -139,11 +153,6 @@
       </ul>
     </nav>
     <a class="btn btn-primary" href="#">Get IT Support</a>
-    <div class="mobile-menu-btn">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
   </header>
 
   <div class="container">
